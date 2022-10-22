@@ -1,0 +1,148 @@
+/* -- ----------------------------------- About ----------------------------------- -- */
+section.about {
+  width: 100%;
+  height: calc(100vh - 74px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 0 5vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.line-1, .line-2 {
+  width: 100vw;
+  height: 20vh;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: #3682b821;
+  position: absolute;
+  transform: rotate(30deg) translateX(25vw);
+}
+
+.line-2 {
+  transform: rotate(30deg) translateY(50vh);
+  width: 120vw;;
+}
+
+.about .wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+
+}
+
+.image-container {
+  width: 500px;
+  height: 500px;
+  border-radius: 250px;
+  overflow: hidden;
+  border: 4px solid rgba(0, 0, 0, 0.12);
+}
+
+.image-container img {
+  width: 500px;
+  height: 500px;
+}
+
+.about-container {
+  width: 500px;
+  margin-left: 60px;
+}
+
+.about-container h2 {
+  font-size: 2.5rem;
+}
+
+.about-container h3 {
+  font-size: 1.25rem;
+  color: rgb(61, 59, 59);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.about-container p {
+  margin-bottom: 8px;
+}
+
+
+section.about hr {
+  margin: 16px 0;
+}
+
+.info {
+  display: flex;
+  font-size: 1rem;
+}
+
+.personal-info {
+  flex: 2;
+}
+
+.personal-info div {
+  margin-bottom: 8px;
+}
+
+.personal-info span {
+  font-weight: 600;
+}
+
+.link-contact {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-contact a {
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.link-contact a i {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* -- ----------------------------------- For large screen ----------------------------------- -- */
+@media screen and (min-width: 1600px) {
+  section.about {
+    padding: 0 15vw;
+  }
+}
+
+/* -- ----------------------------------- For small screen ----------------------------------- -- */
+@media screen and (max-width: 900px) {
+  section.about .wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .image-container, .image-container img{
+    width: 24vh;
+    height: 24vh;
+  }
+
+  .about-container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .about-container h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .about-container h3 {
+    text-align: center;
+  }
+  .wrapper {
+    padding: 12px 0;
+  }
+}
+
+/* -- ----------------------------------- For Animation ----------------------------------- -- */

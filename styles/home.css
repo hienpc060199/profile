@@ -1,0 +1,152 @@
+/* -- ----------------------------------- Home ----------------------------------- -- */
+.home-bg {
+  width: 100vw;
+  height: calc(100vh - 74px);
+  position: fixed;
+  top: 74px;
+  left: 0;
+  background-image: url("../images/zozo3.jpg");
+  z-index: -1;
+  background-size: cover;
+  background-position: 0 -150px;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 74px;
+  width: 100%;
+  height: calc(100vh - 74px);
+  background-color: #253f8e7e;
+  z-index: 1;
+  padding: 0 5vw;
+  color: white;
+}
+
+.intro-container {
+  width: 40%;
+}
+
+.greeting {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+.greeting span {
+  background-color: rgb(45, 42, 42);
+  padding: 2px 8px;
+}
+
+.position {
+  font-size: 3rem;
+}
+
+.position b {
+  font-size: 3rem;
+}
+
+.summary {
+  font-size: 1rem;
+  padding: 8px 0;
+  margin-bottom: 12px;
+}
+
+.more-container {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.more-container a {
+  text-decoration: none;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.more-container .portfolio {
+  background-color: #fff;
+  color: rgb(32, 31, 31);
+}
+
+.more-container .resume {
+  background-color: #1c3b99;
+  color: #fff;
+}
+
+.avatar-container {
+  display: flex;
+  position: relative;
+  width: 400px;
+  background-size: cover;
+}
+
+.avatar-container img {
+  width: 400px;
+  z-index: 1;
+}
+
+.white-left {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 0;
+  left: -25px;
+  top: -25px;
+}
+
+.white-right {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -25px;
+  right: -25px;
+}
+
+/* -- ----------------------------------- For large screen ----------------------------------- -- */
+@media screen and (min-width: 1200px) {
+  .home {
+    padding: 0 10vw;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .home {
+    padding: 0 15vw;
+  }
+}
+
+/* -- ----------------------------------- For small screen ----------------------------------- -- */
+@media screen and (max-width: 900px) {
+  .avatar-container {
+    display: none;
+  }
+  .intro-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .position {
+    font-size: 2.5rem;
+  }
+
+  .position b {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-bg {
+    background-position: -65vw 0;
+  }
+}
